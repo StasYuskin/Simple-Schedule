@@ -2,6 +2,7 @@ package ua.pp.danielyuzek.simple_schedule;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.view.View;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -15,11 +16,11 @@ public class ThreeFragment extends Fragment {
     }
     @Override
     public void onCreate (Bundle savedInstanceState) {
-        super onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
     }
 
     @Override
-    public void View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+    public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_three, container,false);
     }
 }

@@ -16,7 +16,6 @@ public class TwoFragment extends Fragment{
     public TwoFragment(){
 
     }
-
     @Override
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
