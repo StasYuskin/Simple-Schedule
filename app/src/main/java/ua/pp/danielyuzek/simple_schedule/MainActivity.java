@@ -1,6 +1,6 @@
 package ua.pp.danielyuzek.simple_schedule;
 
-import android.app.FragmentManager;
+import android.support.v4.app.FragmentManager;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -10,6 +10,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+import ua.pp.danielyuzek.simple_schedule.R;
+import ua.pp.danielyuzek.simple_schedule.OneFragment;
+import ua.pp.danielyuzek.simple_schedule.TwoFragment;
+import ua.pp.danielyuzek.simple_schedule.ThreeFragment;
+import ua.pp.danielyuzek.simple_schedule.FourthFragment;
+import ua.pp.danielyuzek.simple_schedule.FifthFragment;
+
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -18,6 +30,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Toolbar toolbar;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -46,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapte(getSupportFragmentManager());
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new OneFragment(), "Monday");
         adapter.addFragment(new TwoFragment(), "Thusday");
         adapter.addFragment(new ThreeFragment(), "Wednsday");
@@ -56,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
-        private final list<Fragment> mFragmentList = new ArrayList<>();
-        private final list<String> mFragmentTitleList = new ArrayList<>();
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
 
         public ViewPagerAdapter(FragmentManager manager) {
             super(manager);

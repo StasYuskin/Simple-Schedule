@@ -1,9 +1,9 @@
 package ua.pp.danielyuzek.simple_schedule;
 
-import android.app.Fragment;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import ua.pp.danielyuzek.simple_schedule.R;
@@ -13,7 +13,7 @@ import ua.pp.danielyuzek.simple_schedule.R;
  */
 public class TwoFragment extends Fragment{
 
-    public TwoFragment(){
+    public TwoFragment() {
 
     }
     @Override
@@ -22,7 +22,7 @@ public class TwoFragment extends Fragment{
     }
 
     @Override
-    public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_two, container, false);
     }
  }
