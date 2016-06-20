@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Simple-Schedule</string>
+    <string name="one">Today</string>
+    <string name="two">Tomorrow</string>
+    <string name="three">Monday</string>
+    <string name="four">Thusday</string>
+    <string name="five">Wednsday</string>
+
+</resources>
