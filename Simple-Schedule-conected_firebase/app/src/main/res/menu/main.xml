@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/prev_week"
+        android:orderInCategory="100"
+        android:title="@string/action_prev"
+        android:visible="true"
+        android:icon="@drawable/ic_action_navigation_left"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/current_week"
+        android:orderInCategory="100"
+        android:title="@string/action_current"
+        android:visible="false"
+        android:icon="@drawable/ic_action_navigation_close"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/next_week"
+        android:orderInCategory="100"
+        android:title="@string/action_next"
+        android:visible="true"
+        android:icon="@drawable/ic_action_navigation_right"
+        app:showAsAction="ifRoom" />
+</menu>
